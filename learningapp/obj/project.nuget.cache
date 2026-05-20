@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "wwU8pEUF9Jc=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\milos\\Downloads\\application\\application\\learningapp\\learningapp.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Data.SqlClient (>= 5.2.0)' for 'net8.0'.",
+      "libraryId": "Microsoft.Data.SqlClient",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
