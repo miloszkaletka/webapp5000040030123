@@ -1,0 +1,29 @@
+dbapp_environment = {
+  "production" = {
+    server = {
+      sqlserver40090809123 = {
+        databases = {
+          appdb = {
+            sku      = "S0"
+            sampledb = null
+          }
+          adventureworkdb = {
+            sku      = "S0"
+            sampledb = "AdventureWorksLT"
+          }
+        }
+      }
+    }
+  }
+}
+
+app_setup = ["sqlserver40090809123", "appdb"]
+
+sql_admin_login    = "sqladmin"
+sql_admin_password = "CHANGE_ME"
+allowed_client_ip  = "YOUR.PUBLIC.IP.ADDRESS"
+
+azure_client_id       = "YOUR-AZURE-CLIENT-ID"
+azure_client_secret   = "YOUR-AZURE-CLIENT-SECRET"
+azure_tenant_id       = "YOUR-AZURE-TENANT-ID"
+azure_subscription_id = "YOUR-AZURE-SUBSCRIPTION-ID"
