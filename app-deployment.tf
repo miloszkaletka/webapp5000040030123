@@ -40,5 +40,5 @@ resource "azurerm_app_service_source_control" "appservice_sourcecontrol" {
   app_id                 = azurerm_windows_web_app.webapp["webapp5500040030123"].id
   repo_url               = "https://github.com/miloszkaletka/webapp5000040030123"
   branch                 = "main"
-  use_manual_integration = true
+  use_manual_integration = false
 }
