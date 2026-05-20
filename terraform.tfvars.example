@@ -19,6 +19,20 @@ dbapp_environment = {
 
 app_setup = ["sqlserver40090809123", "appdb"]
 
+webapp_environment = {
+  production = {
+    serviceplan = {
+      serviceplan5500090123 = {
+        sku     = "B1"
+        os_type = "Windows"
+      }
+    }
+    serviceapp = {
+      webapp5500040030123 = "serviceplan5500090123"
+    }
+  }
+}
+
 sql_admin_login    = "sqladmin"
 sql_admin_password = "CHANGE_ME"
 allowed_client_ip  = "YOUR.PUBLIC.IP.ADDRESS"

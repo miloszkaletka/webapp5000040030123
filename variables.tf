@@ -16,6 +16,20 @@ variable "dbapp_environment" {
   ))
 }
 
+variable "webapp_environment" {
+  type = map(object(
+    {
+      serviceplan = map(object(
+        {
+          sku     = string
+          os_type = string
+        }
+      ))
+      serviceapp = map(string)
+    }
+  ))
+}
+
 
 variable "app_setup" {
   type = list(string)
